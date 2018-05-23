@@ -15,7 +15,7 @@ $(document).ready(function() {
                 var $url = "https://reqres-api.herokuapp.com/api/users/" + $id;
                 $.ajax($url,{
                   success: function(person){
-                    var $string = $("<h3>" + person.first_name + ' '+ person.last_name + "</h3><h4>" + person.occupation + "</h4><p>" + person.phone +"</p><p>" + person.address + "</p><img src='"+ person.avatar+ "'>");
+                    var $string = $("<h2>" + person.first_name + ' '+ person.last_name + "</h2><h4>" + person.occupation + "</h4><p>" + person.phone +"</p><p>" + person.address + "</p><img src='"+ person.avatar+ "'>");
                     $('#details').html($string);
                   }
                 })
